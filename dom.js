@@ -5,7 +5,8 @@ class Alumno {
     this.apellido = apellido ;
     this.edad = edad ;
     this.grado = grado;
-    this.calificacion = calificacion ;
+    this.calificacion = calificacion ;}
+}
 
 const alumnos1=new Alumno(1,"Sofia","Masegosa",8, "3ro",10,);
 const alumnos2=new Alumno(2,"Luz","Beron",8, "3ro",4,);
@@ -24,9 +25,9 @@ ArrayAlumnos = []
 
     const divAlumnos = document.getElementById ("divAlumnos");
     ArrayAlumnos.forEach(matriculaArray => {
-        divAlumnos.innerHTML = `
+       divAlumnos.innerHTML=
         <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="..." class="card-img-top" alt="..."></img>
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">${matriculaArray.id}</p>
@@ -37,7 +38,4 @@ ArrayAlumnos = []
         <p class="card-text"> Edad ${matriculaArray.calificacion}</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
-    </div>
-        `
-        
-    });
+    </div>});
